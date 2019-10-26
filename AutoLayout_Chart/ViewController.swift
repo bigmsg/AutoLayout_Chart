@@ -6,6 +6,18 @@
 //  Copyright © 2019년 양팀장. All rights reserved.
 //
 
+
+/*
+ view를 사용하며. 높이를 조절하여 막대그래프를 그림
+ - multiplier를 사용하여 %를 사용한 높낮이 조절
+ - multiplier는 값 변경이 안됨 오직 읽기만 가능함
+ - 그래서 높이의 constraint를 새로 생성하여 새로운 constraint 를 적용함
+ 
+ - 직접 height constraint의 직접 multiplier이 아닌 직접 값을 입력하여서도 가능하지만
+ - 그러면 비율적인 사용은 좀 복잡해질 수 있음
+ 
+ */
+
 import UIKit
 
 extension NSLayoutConstraint {
